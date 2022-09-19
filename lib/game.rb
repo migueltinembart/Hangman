@@ -11,7 +11,6 @@ class Game
 
     def initialize(list)
         @word_list = load_text(list)
-        puts word_list.length
     end
 
     def pick_random_word
