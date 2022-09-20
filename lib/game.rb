@@ -31,7 +31,7 @@ class Game
     end
 
     def create_empty_word
-        empty_string = @word.split
+        empty_string = @word.split("")
         empty_string.map! {|char| char = "_"}
         return empty_string
     end
@@ -46,17 +46,21 @@ class Game
             puts hit(char)
         else
             puts wrong
-            
+
         end
     end
 
     def initialize_turns(word)
-        word.length
+        @tries = word.length
+    end
+
+    def take_turn
+        self
     end
 
 
     def play_game
-        puts how_many_turns(@word_list)
+        puts how_many_turns(@tries)
         puts show_board(@emptry_string)
         char = ask_for_char
         evaluate_input(char)

@@ -13,7 +13,7 @@ module Display
     end
 
     def how_many_turns(tries)
-        "you start with #{tries} many tries"
+        "you start with #{tries} tries"
     end
 
     def how_many_turns_left(tries)
