@@ -36,5 +36,13 @@ module Display
         "Wrong input you lose a life"
     end
 
+    def invalid_input
+        "invalid input"
+    end
+    
+    def game_over_screen
+        "You lost the game... wanna retry?"
+    end
+
 
 end
